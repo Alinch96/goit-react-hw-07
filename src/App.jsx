@@ -29,7 +29,7 @@ function App() {
       <SearchBox />
       {error && <ErrorMessage />}
       {loading && <Loader />}
-      {contacts && <ContactList />}
+      {contacts.length > 0 && <ContactList />}
     </div>
   );
 }
